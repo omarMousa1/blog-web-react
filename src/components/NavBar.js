@@ -104,7 +104,7 @@ export const NavBar = ({ isOpen, toggleSidebar }) => {
               <hr className="border border-black opacity-25" />
               <NavLink to={"todo"}>Todo List</NavLink>
               <hr className="border border-black opacity-25" />
-              <NavLink to={"weather"}>Null</NavLink>
+              <NavLink to={"weather"}>Weather System</NavLink>
             </div>
           </div>
           <ResumeButton />
