@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Board from "./Border";
-import lightMod from "../../../assets/images/icons/lightMod.svg";
 
 const TicTacToe = () => {
   const [history, setHistory] = useState([{ squares: Array(9).fill(null) }]);
