@@ -6,7 +6,6 @@ import { About } from "../pages/About";
 import { Project } from "../pages/Project";
 import { Form } from "../pages/Form";
 import { Testimonial } from "./Testimonial";
-import { WeatherApp } from "./weatherSystem/WeatherApp";
 
 export const Home = () => {
   return (
@@ -18,7 +17,6 @@ export const Home = () => {
       <Project />
       <Testimonial />
       <Form />
-      <WeatherApp />
     </main>
   );
 };
