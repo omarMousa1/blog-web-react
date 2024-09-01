@@ -67,7 +67,9 @@ export const CardCarousel = () => {
   const handleNext = () => {
     setAnimationClass("slide-left");
     setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % infoCards.length);
+      setCurrentIndex(
+        (prevIndex) => (prevIndex + cardsToShow) % infoCards.length
+      );
       setAnimationClass("");
     }, 300); // Matches the duration of the animation
   };
@@ -76,7 +78,8 @@ export const CardCarousel = () => {
     setAnimationClass("slide-right");
     setTimeout(() => {
       setCurrentIndex(
-        (prevIndex) => (prevIndex - 1 + infoCards.length) % infoCards.length
+        (prevIndex) =>
+          (prevIndex - cardsToShow + infoCards.length) % infoCards.length
       );
       setAnimationClass("");
     }, 300); // Matches the duration of the animation
