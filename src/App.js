@@ -10,8 +10,8 @@ import { Home } from "./pages/Home";
 import TicTacToe from "./pages/games/tictactoe/TicTacToe";
 import { NotFound } from "./pages/NotFound";
 import { ToDoList } from "./pages/todo list/ToDoList";
-// import { WeatherApp } from "./pages/waetherSystem/WeatherApp";
 import { useEffect } from "react";
+import { WeatherApp } from "./pages/weatherSystem/WeatherApp";
 
 function App() {
   useEffect(() => {
@@ -25,7 +25,7 @@ function App() {
         <Route path="wordle" element={<Wordle />} />
         <Route path="tictactoe" element={<TicTacToe />} />
         <Route path="todo" element={<ToDoList />} />
-        {/* {<Route path="weather" element={<WeatherApp />} /> */}
+        <Route path="weather" element={<WeatherApp />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     )
