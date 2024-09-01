@@ -20,13 +20,12 @@ export const NavBar = ({ isOpen, toggleSidebar }) => {
     }
   };
 
-  const handleScroll = () => {
-    if (isDropdownOpen) {
-      setIsDropdownOpen(false);
-    }
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      if (isDropdownOpen) {
+        setIsDropdownOpen(false);
+      }
+    };
     if (isDropdownOpen) {
       document.addEventListener("mousedown", handleClickOutside);
       window.addEventListener("scroll", handleScroll);
@@ -39,7 +38,7 @@ export const NavBar = ({ isOpen, toggleSidebar }) => {
       document.removeEventListener("mousedown", handleClickOutside);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isDropdownOpen, handleScroll]);
+  }, [isDropdownOpen]);
 
   return (
     <>
