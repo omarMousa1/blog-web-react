@@ -13,7 +13,6 @@ import {
   MdOpacity,
   MdAir,
 } from "react-icons/md";
-import { IoMdRainy } from "react-icons/io";
 
 const apiKey = "0b443d472dab60a8bbfc6acbee135cc9";
 
