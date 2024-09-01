@@ -6,7 +6,6 @@ import { About } from "../pages/About";
 import { Project } from "../pages/Project";
 import { Form } from "../pages/Form";
 import { Testimonial } from "./Testimonial";
-import { Spinner } from "../components/Spinner";
 import { WeatherApp } from "./weatherSystem/WeatherApp";
 
 export const Home = () => {
