@@ -39,7 +39,7 @@ export const NavBar = ({ isOpen, toggleSidebar }) => {
       document.removeEventListener("mousedown", handleClickOutside);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isDropdownOpen]);
+  }, [isDropdownOpen, handleScroll]);
 
   return (
     <>
