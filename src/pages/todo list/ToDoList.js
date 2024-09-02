@@ -54,7 +54,7 @@ export const ToDoList = () => {
   };
 
   return (
-    <section className="sm:p4">
+    <section className="p-4 mt-6">
       <main className="todo mt-24 p-4 max-w-3xl mx-auto bg-gray-800 text-white rounded-md shadow-lg">
         <h1 className="text-2xl font-bold mb-4 text-center">Todo App</h1>
         <div>
