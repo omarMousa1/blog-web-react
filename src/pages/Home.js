@@ -9,7 +9,7 @@ import { Testimonial } from "./Testimonial";
 
 export const Home = () => {
   return (
-    <main className="mt-24">
+    <main className="mt-36">
       <Introduction />
       <Skills />
       <Experience />
