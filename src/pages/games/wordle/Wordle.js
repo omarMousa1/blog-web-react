@@ -92,7 +92,7 @@ const Wordle = () => {
   };
 
   return (
-    <section className="wordle mt-24 md:mt-8 lg:mt-4">
+    <section className="wordle mt-[125px] sm:mt-[125px] md:mt-[125px] lg:mt-[80px]">
       <div className="flex flex-col items-center justify-center min-h-screen bg-[#F0EBE3]">
         <h1 className="text-2xl font-bold mb-5">Wordle (لغز الكلمة)</h1>
         <Board
