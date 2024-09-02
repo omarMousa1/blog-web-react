@@ -18,7 +18,7 @@ const apiKey = "0b443d472dab60a8bbfc6acbee135cc9";
 
 export const WeatherApp = () => {
   const [data, setData] = useState(null);
-  const [location, setLocation] = useState("jordan");
+  const [location, setLocation] = useState("riyadh");
   const [inputValue, setInputValue] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
@@ -32,7 +32,11 @@ export const WeatherApp = () => {
     if (inputValue !== "") {
       setLocation(inputValue);
     }
-    setInputValue("");
+    if (loading === false) {
+      setTimeout(() => {
+        setInputValue("");
+      }, 2000);
+    }
   };
 
   useEffect(() => {
@@ -60,11 +64,10 @@ export const WeatherApp = () => {
     return () => clearTimeout(timer);
   }, [errorMsg]);
 
-  if (!data && !loading) {
+  if (!data) {
     return (
       <div className="flex justify-center items-center h-screen">
         <Spinner />
-        Loading...
       </div>
     );
   }
@@ -102,7 +105,7 @@ export const WeatherApp = () => {
     <section className="weather flex flex-col items-center justify-center mt-12 p-6 bg-gradient-to-b from-purple-700 to-blue-700 min-h-screen text-black neon-bg">
       {errorMsg && (
         <div className="bg-pink-600 text-white p-3 rounded mb-4 shadow-lg neon-border">
-          {`${errorMsg.response.data.message}`}
+          {`The country or city not found: ${errorMsg}`}
         </div>
       )}
       <form
