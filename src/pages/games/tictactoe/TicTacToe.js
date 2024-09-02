@@ -129,7 +129,7 @@ const TicTacToe = () => {
   };
 
   return (
-    <section className="tictactoe mt-[90px]">
+    <section className="tictactoe mt-[125px]">
       <div className="w-full h-full">
         <nav className="w-full flex items-center justify-center gap-x-4 p-2 bg-[#EECEB9] dark:bg-[#4C3BCF] shadow-xl">
           <button
