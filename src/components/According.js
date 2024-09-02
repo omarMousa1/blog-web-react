@@ -15,9 +15,13 @@ export const According = ({
         onClick={() => setAccordingShow(!accordingShow)}
         className="flex justify-between items-center w-full"
       >
-        <div className="flex justify-center items-center gap-x-3">
-          <img src={logoExperience} alt={titleOfLogo} />
-          <span className="text-white text-xl text-left">{subject}</span>
+        <div className="text-left md:flex md:justify-center md:items-center md:gap-x-3">
+          <img
+            src={logoExperience}
+            alt={titleOfLogo}
+            className="mb-2 md:mb-0"
+          />
+          <span className="text-white text-xl">{subject}</span>
         </div>
         <svg
           className="fill-white shrink-0 ml-6"

@@ -9,7 +9,7 @@ import ArrowR from "../assets/images/icons/arrow-right-svgrepo-com.svg";
 
 export const CardCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [cardsToShow, setCardsToShow] = useState(3);
+  const [cardsToShow, setCardsToShow] = useState(2);
   const [animationClass, setAnimationClass] = useState("");
   const carouselRef = useRef(null);
 
@@ -71,7 +71,7 @@ export const CardCarousel = () => {
         (prevIndex) => (prevIndex + cardsToShow) % infoCards.length
       );
       setAnimationClass("");
-    }, 300); // Matches the duration of the animation
+    }, 300);
   };
 
   const handlePrev = () => {
@@ -82,12 +82,12 @@ export const CardCarousel = () => {
           (prevIndex - cardsToShow + infoCards.length) % infoCards.length
       );
       setAnimationClass("");
-    }, 300); // Matches the duration of the animation
+    }, 300);
   };
 
   const handleResize = () => {
     if (window.innerWidth >= 1200) {
-      setCardsToShow(3);
+      setCardsToShow(2);
     } else if (window.innerWidth >= 900) {
       setCardsToShow(2);
     } else {
@@ -124,7 +124,7 @@ export const CardCarousel = () => {
     setTimeout(() => {
       setCurrentIndex(index);
       setAnimationClass("");
-    }, 300); // Matches the duration of the animation
+    }, 300);
   };
 
   return (

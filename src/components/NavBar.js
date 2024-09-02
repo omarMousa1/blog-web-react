@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../assets/images/logo/logoReact.svg";
+// import logo from "../assets/images/logo/logoReact.svg";
+import logo2 from "../assets/images/avatar/avatar-man1.svg";
 import { ResumeButton } from "./ResumeButton";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Breadcrumbs } from "./Breadcrumbs";
 import openMenu from "../assets/images/icons/menu-expand-svgrepo-com.svg";
 import closeMenu from "../assets/images/icons/menu-collapsed-svgrepo-com.svg";
@@ -44,7 +45,16 @@ export const NavBar = ({ isOpen, toggleSidebar }) => {
     <>
       <nav className="flex items-center justify-between p-6 bg-slate-100 shadow-md">
         <div>
-          <img src={logo} alt="logo" className="w-10 h-10 mr-2" />
+          <Link to="/">
+            <div className="flex flex-col justify-center items-center">
+              <div className="border-black border-2 rounded-full w-12 h-12 overflow-hidden">
+                <img src={logo2} alt="logo" className="object-contain" />
+              </div>
+              <h1 className="border-black border-b-4 rounded-lg px-1 shadow-sm shadow-black italic">
+                OMAR MOUSA
+              </h1>
+            </div>
+          </Link>
         </div>
 
         <div className="block md:hidden lg:hidden">
@@ -96,8 +106,6 @@ export const NavBar = ({ isOpen, toggleSidebar }) => {
                   : "scale-y-100 opacity-100 visible"
               } origin-top`}
             >
-              <NavLink to={"/"}>Home</NavLink>
-              <hr className="border border-black opacity-25" />
               <NavLink to={"tictactoe"}>TicTacToe</NavLink>
               <hr className="border border-black opacity-25" />
               <NavLink to={"wordle"}>Wordle</NavLink>
@@ -110,7 +118,7 @@ export const NavBar = ({ isOpen, toggleSidebar }) => {
           <ResumeButton />
         </div>
       </nav>
-      <div className="hidden md:block lg:block absolute top-4 left-20">
+      <div className="hidden md:block lg:block absolute top-4 left-44">
         <Breadcrumbs />
       </div>
     </>
