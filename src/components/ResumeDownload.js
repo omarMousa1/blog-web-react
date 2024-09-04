@@ -1,4 +1,4 @@
-import cv from "../assets/resume/OmarMousaCV.pdf";
+import cv from "../assets/resume/Omar-Resume.pdf";
 
 export const ResumeDownload = () => {
   const url = cv;
