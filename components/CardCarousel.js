@@ -17,48 +17,42 @@ export const CardCarousel = () => {
     {
       id: 1,
       avatar: man1,
-      details:
-        "Electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      details: "Text",
       username: "Omar",
       jobname: "Full Stack",
     },
     {
       id: 2,
       avatar: women1,
-      details:
-        "For over five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      details: "Text",
       username: "Sadeen",
       jobname: "Testing",
     },
     {
       id: 3,
       avatar: man3,
-      details:
-        "Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+      details: "Text",
       username: "Yasser",
       jobname: "Web developer",
     },
     {
       id: 4,
       avatar: man2,
-      details:
-        "But it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      details: "Text",
       username: "Malek",
       jobname: "Software Eng",
     },
     {
       id: 5,
       avatar: women2,
-      details:
-        "Lorem Ipsum is simply standard dummy text. Not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      username: "Sara",
+      details: "Text",
+      username: "Sabreen",
       jobname: "Accounting",
     },
     {
       id: 6,
       avatar: women2,
-      details:
-        "Lorem Ipsum is the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      details: "Text",
       username: "Yara",
       jobname: "Sales",
     },
